@@ -11,7 +11,7 @@ and a side nav for category and featured post navigation
 <main>
 
     <!--sets global featured variable as the most recent post with the isFeatured tag-->
-    {%- set section = get_section(path="blog/_index.md") %}
+    {%- set section = get_section(path="products/_index.md") %}
     {% for page in section.pages %}
     {% if page.extra.isFeatured %}
         {%- set_global featured = page %}
@@ -19,11 +19,11 @@ and a side nav for category and featured post navigation
     {% endif %}
     {% endfor %}
     
-    {% include "partials/featuredBlog.html" %}
+    {% include "partials/featuredProduct.html" %}
 
     <div class="flex flex-col md:flex-row container mx-auto">
-        {% include "partials/blogPosts.html" %}
-        {% include "partials/blogSidebar.html" %}
+        {% include "partials/productPosts.html" %}
+        {% include "partials/productSidebar.html" %}
     </div>
  </main> 
  

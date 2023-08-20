@@ -61,6 +61,12 @@ paginate_by = 2
 paginate_path = "blog-posts"
 
 [[taxonomies]]
+name = "items"
+feed = true
+paginate_by = 2
+paginate_path = "product-posts"
+
+[[taxonomies]]
 name = "roles"
 feed = true
 paginate_by = 2
