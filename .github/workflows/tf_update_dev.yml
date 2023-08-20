@@ -18,7 +18,7 @@ jobs:
         script: |
           cd websites/www2/www_ourphone/
           git log -1
-          git restore .
-          git pull
+          git fetch
+          git reset --hard origin/development
           sed -i "s/https:\/\/ourphone.tf/https:\/\/www2.ourphone.tf/g" config.toml
           ./build.sh
