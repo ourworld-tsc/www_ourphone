@@ -9,10 +9,10 @@
 <header id="header-container">
     <div class="z-10 bg-white fixed w-screen">
         <div class="relative z-50 shadow">
-        <div class="mx-auto flex z-50 shadow justify-between items-center pl-6 pr-2 md:pl-0 md:pr-0 lg:py-5 sm:px-8 md:px-12 py-2 lg:px-20 lg:justify-start lg:space-x-20">
+        <div class="mx-auto flex z-50 shadow justify-between items-center pl-6 pr-2 md:pl-0 md:pr-0 sm:px-8 md:px-12 py-1 lg:px-20 lg:justify-start lg:space-x-20">
             <div>
                 <a href="/" class="flex">
-                    <img class="w-48 h-auto sm:w-15" src="{{section.extra.logoPath}}" alt="Ourworld Logo" />
+                    <img class="h-auto" src="{{section.extra.logoPath}}" alt="Ourworld Logo" />
                 </a>
             </div>
             <div class="-mr-2 -my-2 lg:hidden">
@@ -40,11 +40,11 @@
         {% set link_label = header_label | striptags %}
         {% set link_path = header_label | split(pat="%22") | safe%}
         {% if header_label is containing("http") %}
-            <a href="{{link_path[1]}}" target="_blank" class="text-lg leading-6 font-medium text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150 mt-0">
+            <a href="{{link_path[1]}}" target="_blank" class="text-md leading-6 font-medium text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150 mt-0">
                 {{link_label}}
             </a>
         {% else %}
-            <a href="{{link_path[1]}}" class="text-lg leading-6 font-medium text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150 mt-0">
+            <a href="{{link_path[1]}}" class="md leading-6 font-medium text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150 mt-0">
                 {{link_label}}
             </a>
         {% endif %}
@@ -98,10 +98,10 @@
             From: "opacity-100 scale-100"
             To: "opacity-0 scale-95"
         -->
-    <div id="hamburger" class="hidden fixed mt-16 z-20 top-0 inset-x-0 transition transform origin-top-right lg:hidden">
+    <div id="hamburger" class="hidden fixed z-20 top-0 inset-x-0 transition transform origin-top-right lg:hidden">
         <div>
             <div class="shadow-xs h-screen bg-white divide-y-2 divide-gray-50">
-                <div class="pb-6 sm:px-12 md:px-16 lg:px-20 space-y-6 sm:space-y-8 sm:pb-8 max-h-screen overflow-y-auto">
+                <div class="pb-6 mt-16 sm:px-12 md:px-16 lg:px-20 space-y-6 sm:space-y-8 sm:pb-8 max-h-screen overflow-y-auto">
 
                     <nav class="flex flex-col justify-around pb-12">
                     {% for header_item in header_items %}
