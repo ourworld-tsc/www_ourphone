@@ -17,7 +17,7 @@ Last updated: March 2023
 
 ## Contribution
 
-Feel free to [create a new issue](https://github.com/ourworld-tsc/www_ourphone/issues) to report an error on the website, or if you have any suggestions on website improvements. 
+Feel free to [create a new issue](https://git.ourworld.tf/tfgrid/circle_web_presence/issues/29) to report an error on the website, or if you have any suggestions on website improvements. 
 
 # Welcome to Ourworld Website Repository
 
